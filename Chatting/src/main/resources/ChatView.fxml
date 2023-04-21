@@ -3,15 +3,21 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChatMajorView.ChatViewController">
    <children>
-      <TextArea fx:id="chatArea" layoutY="-1.0" prefHeight="348.0" prefWidth="602.0" />
+      <ImageView fitHeight="399.0" fitWidth="697.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@江南.gif" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="chatArea" layoutX="-3.0" layoutY="-2.0" opacity="0.52" prefHeight="349.0" prefWidth="605.0" />
       <TextField fx:id="inputField" alignment="TOP_LEFT" layoutY="347.0" prefHeight="53.0" prefWidth="527.0" />
-      <Button fx:id="sendButton" onAction="#handleSendButton" layoutX="527.0" layoutY="347.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="75.0" text="Send">
+      <Button fx:id="sendButton" layoutX="527.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleSendButton" prefHeight="53.0" prefWidth="75.0" text="Send">
          <font>
             <Font size="18.0" />
          </font>
